@@ -4,6 +4,7 @@
 [here](https://www.tensorflow.org/tutorials)
 
 ## Basic Classification
+![](basic_classification.png)
 Corresponding script :
 ```
 basic_classification.py
