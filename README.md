@@ -5,6 +5,8 @@
 
 ## Basic Classification
 ![](basic_classification.png)
+
+
 Corresponding script :
 ```
 basic_classification.py
@@ -26,7 +28,8 @@ There are 10 different labels :
 * 9 = Ankle boot
 
 ## Text Classification
-![](text_classification.jpg)
+![](text_classification.jpg)  
+
 Corresponding script :
 ```
 text_classification.py
