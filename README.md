@@ -43,6 +43,21 @@ All the reviews are acompanied by a label which can be :
 * 0 = "Negative"
 * 1 = "Positive"
 
+### Overfitting prevention techniques
+Corresponding script :
+```
+movies_reviews_classification_overfitting.py
+```
+When the accuracy of a model on the validation data peak after training for a number of epochs, and then start decreasing is what we call __overfitting__.
+In this scipt we tried to illustrate the different techniques to prevent overfitting when training a model. 
+These techniques are :
+* Get __more training data__ _(not covered)_
+* Add __Weight regularization__ (add to the loss function of the network a cost associated with having large weights. In this case we used the _weight decay (L2 regularization)_ where the cost added is proportional to the square of the value of the weights coefficients)
+* Add __Dropouts__ to the layers (consists of randomly "dropping out" (i.e. set to zero) a number of output features of the layer during training. The "dropout rate" is the fraction of the features that are being zeroed-out; it is usually set between 0.2 and 0.5.At test time, no units are dropped out, and instead the layer's output values are scaled down by a factor equal to the dropout rate)
+* __Data-augmentation__ _(not covered)_
+* __Batch normalization__ _(not covered)_
+
+
 ## Regression (Cars fuel efficiency)
 ![](regression.png)   
 
