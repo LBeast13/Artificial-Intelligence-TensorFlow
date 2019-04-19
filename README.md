@@ -9,7 +9,7 @@
 
 Corresponding script :
 ```
-basic_classification.py
+clothing_images_classification.py
 ```
 Used dataset : [Fashion Mnist](https://github.com/zalandoresearch/fashion-mnist)
 
@@ -33,7 +33,7 @@ There are 10 different labels :
   
 Corresponding script :
 ```
-text_classification.py
+movies_reviews_classification.py
 ```
 Used dataset : [Internet Movie Database IMDB](https://www.tensorflow.org/api_docs/python/tf/keras/datasets/imdb)  
 
@@ -48,7 +48,7 @@ All the reviews are acompanied by a label which can be :
 
 Corresponding script :
 ```
-regression.py
+fuel_efficiency_regression.py
 ```
 Used dataset : [Auto MPG](https://archive.ics.uci.edu/ml/datasets/auto+mpg)
 
