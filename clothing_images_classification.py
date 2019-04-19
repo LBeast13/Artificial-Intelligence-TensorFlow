@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Basic classification Tensorflow (AI)
+Basic classification Tensorflow (AI) : Clothing images
 
 Dataset used : Fashion Mnist
 

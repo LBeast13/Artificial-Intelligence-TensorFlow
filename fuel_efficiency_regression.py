@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Regression TensorFlow (AI)
+Regression TensorFlow (AI) : Fuel efficiency
 
 Dataset used : Auto MPG
 

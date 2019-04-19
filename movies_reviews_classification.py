@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Text Classification TensorFlow (AI)
+Text Classification TensorFlow (AI) : Movie reviews
 
 Dataset used : Internet Movie Database IMDB
 
