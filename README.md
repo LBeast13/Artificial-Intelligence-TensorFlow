@@ -37,7 +37,7 @@ text_classification.py
 In this script, we train a neural network model (Binary classification with supervised learning) to classify reviews in two categories : positive and negative.
 For that, we used the Internet Movie Database IMDB for both training and testing.
 Each review is composed by several integers each representing a specific word in a dictionary. We are provided a map with a word mapped to an integer that we can easily reverse in order to code/decode any review.
-All the review is acompanied by a label which can be :
+All the reviews are acompanied by a label which can be :
 * 0 = "Negative"
 * 1 = "Positive"
 
