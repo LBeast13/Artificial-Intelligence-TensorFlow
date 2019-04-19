@@ -8,22 +8,22 @@ Trains a neural network model (supervised learning) to classify images of
 clothing, like sneakers and shirts.
 
 Each image :
-    . is 28 x 28 px 
-    . each pixel is represented by one value from 0 to 255
-    . has one label
+    - is 28 x 28 px 
+    - each pixel is represented by one value from 0 to 255
+    - has one label
 
 The labels are integers corresponding the class of clothing 
 the image represent according :
-    . 0 = T-shirt/top
-    . 1 = Trouser
-    . 2 = Pullover
-    . 3 = Dress
-    . 4 = Coat
-    . 5 = Sandal
-    . 6 = Shirt
-    . 7 = Sneaker
-    . 8 = Bag
-    . 9 = Ankle boot
+    - 0 = T-shirt/top
+    - 1 = Trouser
+    - 2 = Pullover
+    - 3 = Dress
+    - 4 = Coat
+    - 5 = Sandal
+    - 6 = Shirt
+    - 7 = Sneaker
+    - 8 = Bag
+    - 9 = Ankle boot
 """
 
 from __future__ import absolute_import, division, print_function
@@ -44,8 +44,8 @@ class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
 def plot_image(i, predictions_array, true_label, img):
     """ 
     Display the image (img) with the label in :
-        . blue = the prediction is correct
-        . red = the prediction is wrong
+        - blue = the prediction is correct
+        - red = the prediction is wrong
     The label follow the pattern :
         Predicted Label confidence % (real label)
     """
@@ -133,24 +133,24 @@ def build_model(train_images, train_labels):
     """
     Builds, trains and return the model.
     1. Setup the Layers :
-       . The first Layer (Flatten) reformats the data (2Darray-28x28) in a 
+       - The first Layer (Flatten) reformats the data (2Darray-28x28) in a 
          1D-array-784 (28x28)
-       . The second Layer (Dense) has 128 nodes (neurons)
-       . The last Layer (Dense) returns an array of 10 probability scores that 
+       - The second Layer (Dense) has 128 nodes (neurons)
+       - The last Layer (Dense) returns an array of 10 probability scores that 
          sum to 1 Each node contains a score that indicates the probability that 
          the current image belongs to one of the 10 classes.
     2. Compile the model :
-       . Loss function : measures how accurate the model is during training. 
+       - Loss function : measures how accurate the model is during training. 
          We want to minimize this function to "steer" the model in the right 
          direction.
-       . Optimizer : how the model is updated based on the data it sees and 
+       - Optimizer : how the model is updated based on the data it sees and 
          its loss function.
-       . Metrics : to monitor the training and testing steps.     
+       - Metrics : to monitor the training and testing steps.     
     3. Train the model :
-       . Feed the training data to the model—in (the train_images and 
+       - Feed the training data to the model—in (the train_images and 
          train_labels arrays)
-       . The model learns to associate images and labels.
-       . Ask the model to make predictions about a test set—in (test_images array) 
+       - The model learns to associate images and labels.
+       - Ask the model to make predictions about a test set—in (test_images array) 
          We verify that the predictions match the labels from the test_labels array.
     """
     # BUILD 
@@ -199,10 +199,10 @@ def make_predictions(model, test_images):
 def main():
     """
     The main function called by the entry point : 
-        . Explore the data 
-        . Preprocess the data
-        . Build and train the model
-        . Make predictions
+        - Explore the data 
+        - Preprocess the data
+        - Build and train the model
+        - Make predictions
     """
     # Loads the dataset returning 4 numPy arrays :
     #   - Train_images and train_labels --> the training set

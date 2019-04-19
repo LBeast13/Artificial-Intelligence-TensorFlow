@@ -8,12 +8,12 @@ Classifies movie reviews as positive or negative (Binary classification with
 supervised learning) using the text of the review.
 
 Each movie review :
-    . Array of integers (each mapping a word in a dictionary)
-    . have not a standard length
+    - Array of integers (each mapping a word in a dictionary)
+    - have not a standard length
 
 Each label is an integer :
-    . 0 = Negative
-    . 1 = Positive
+    - 0 = Negative
+    - 1 = Positive
 
 @author: Liam Bette
 """
@@ -30,8 +30,8 @@ import matplotlib.pyplot as plt
 def get_dictionary(imdb):
     """
     Returns two dictionaries useful for coding/decoding :
-        . One mapping a word to an index
-        . Another mapping an index to a word
+        - One mapping a word to an index
+        - Another mapping an index to a word
     """
     # A dictionary mapping words to an integer index
     word_index = imdb.get_word_index()
@@ -59,11 +59,11 @@ def data_exploration(data, labels):
     """
     Displays information on the images and labels for a better understanding
     of the datasets. We can learn that :
-        . The data is composed by 25000 reviews and the there are also 25000 
+        - The data is composed by 25000 reviews and the there are also 25000 
           labels
-        . Each review is represented by a list of integers where each integer 
+        - Each review is represented by a list of integers where each integer 
           represents a specific word in a dictionary.
-        . Reviews can have different lengths
+        - Reviews can have different lengths
     """
     print("Training entries: {}, labels: {}".format(len(data), len(labels)))
     print(labels)
@@ -175,6 +175,13 @@ def accuracy_loss_graph(history_dict):
 def main():
     """
     The main function called by the entry point : 
+        - Download the data
+        - Explore the data
+        - Get the dictionaries for coding/decoding reviews
+        - Prepare the data
+        - Build the model
+        - Evaluate the model
+        - Display the accuracy and the loss
     """
     # DOWNLOAD THE DATA
     imdb = keras.datasets.imdb      # Load the movies dataset From imdb
@@ -201,7 +208,7 @@ def main():
     results = model.evaluate(test_data, test_labels)
     print(results) # Accuracy
     
-    # Display an accuracy graph
+    # Display an accuracy and loss graph
     accuracy_loss_graph(history_dict)
     
 
